@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hotel Search</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="hero">
+    <div class="overlay">
+      <div class="search-container">
+        <h1>Find Your Perfect Stay</h1>
+        <div class="search-bar">
+          <input type="text" id="location" placeholder="Enter location..." />
+          <input type="date" id="checkin" />
+          <input type="date" id="checkout" />
+          <input type="number" id="guests" placeholder="Guests" min="1" />
+          <button onclick="searchHotels()">Search</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="results" id="results"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
